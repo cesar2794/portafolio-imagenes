@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Portafolio Dinámico - César Augusto</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/50540aef12.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+	<div class="contenedor">
+
+		<header>
+			<div class="logo">
+				<h1>CESAR ROSAS</h1>
+				<p>Desarrollo Web | Base de Datos</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Naturaleza</a>
+				<a href="#">Ciudades</a>
+				<a href="#">Personas</a>
+				<a href="#">Animales</a>
+				<a href="#">Paisajes</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+
+			<div class="item" 
+				data-categoria="ciudades" 
+				data-etiquetas="ciudad autos carros calles edificios"
+				data-descripcion="1. Impresionante ciudad de Dubai."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad1.jpg" alt="ciudad 1">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="personas" 
+				data-etiquetas="personas mujer hombres niño"
+				data-descripcion="2. Personas en un tren."
+			>
+				<div class="item-contenido">
+					<img src="img/persona1.jpg" alt="persona 1">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="paisajes" 
+				data-etiquetas="paisajes montañas mar playa"
+				data-descripcion="3. Hermosa playa."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje1.png" alt="paisaje 1">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="animales" 
+				data-etiquetas="animal perro"
+				data-descripcion="4. Perro amigable con su correa."
+			>
+				<div class="item-contenido">
+					<img src="img/animal1.jpg" alt="animal 1">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="animales" 
+				data-etiquetas="animales gorila selva tropical"
+				data-descripcion="5. Gorila en la selva tropical."
+			>
+				<div class="item-contenido">
+					<img src="img/animal2.jpg" alt="animal 2">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="personas" 
+				data-etiquetas="persona niña peinado"
+				data-descripcion="6. Niña emocionada por su peinado princesa."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.jpg" alt="persona 2">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="paisajes" 
+				data-etiquetas="paisaje montañas neblina"
+				data-descripcion="7. Impactantes montañas siendo cubiertas por la neblina."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje2.png" alt="paisaje 2">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="ciudades" 
+				data-etiquetas="ciudad autos carros calles puente edificios"
+				data-descripcion="8. La hermosa ciudad de Nueva York."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad2.jpg" alt="ciudad 2">
+				</div>
+			</div>
+
+			<div class="item" 
+				data-categoria="naturaleza" 
+				data-etiquetas="naturaleza plantas isla playa caribe"
+				data-descripcion="9. Hermosa imagen de la Isla del Caribe."
+			>
+				<div class="item-contenido">
+					<img src="img/naturaleza1.jpg" alt="naturaleza 1">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="overlay" id="overlay">
+
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="">
+			</div>
+
+			<p class="descripcion"></p>
+			
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://twitter.com/" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.facebook.com/" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://github.com/" target="_blank" class="github">
+						<i class="fab fa-github-alt"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p> <i class="fas fa-hand-holding-heart"></i> Sitio diseñado por <a href="#">César Rosas</a></p>
+			</div>		
+		</footer>
+
+	</div>
+	
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
